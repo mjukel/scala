@@ -998,6 +998,7 @@ abstract class GenASM extends SubComponent with BytecodeWriters { self =>
      * Invoked from genMethod() and addForwarder().
      */
     def addRemoteExceptionAnnot(isRemoteClass: Boolean, isJMethodPublic: Boolean, meth: Symbol) {
+      /*
       val needsAnnotation = (
         (  isRemoteClass ||
            isRemote(meth) && isJMethodPublic
@@ -1008,6 +1009,7 @@ abstract class GenASM extends SubComponent with BytecodeWriters { self =>
         val arg = Literal(c) setType c.tpe
         meth.addAnnotation(appliedType(ThrowsClass, c.tpe), arg)
       }
+      */
     }
 
     // -----------------------------------------------------------------------------------------

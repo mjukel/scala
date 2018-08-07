@@ -114,7 +114,7 @@ lazy val publishSettings : Seq[Setting[_]] = Seq(
 // is the same as the Maven version and derived automatically from `baseVersion` and `baseVersionSuffix`.
 globalVersionSettings
 baseVersion in Global := "2.11.12"
-baseVersionSuffix in Global := "SNAPSHOT"
+baseVersionSuffix in Global := "KH"
 mimaReferenceVersion in Global := Some("2.11.0")
 
 lazy val commonSettings = clearSourceAndResourceDirectories ++ publishSettings ++ Seq[Setting[_]](

@@ -541,16 +541,18 @@ abstract class BCodeHelpers extends BCodeIdiomatic with BytecodeWriters {
      * must-single-thread
      */
     def addRemoteExceptionAnnot(isRemoteClass: Boolean, isJMethodPublic: Boolean, meth: Symbol) {
+      /*
       val needsAnnotation = (
         (  isRemoteClass ||
            isRemote(meth) && isJMethodPublic
-        ) && !(meth.throwsAnnotations contains definitions.RemoteExceptionClass)
+        )
       )
       if (needsAnnotation) {
         val c   = Constant(definitions.RemoteExceptionClass.tpe)
         val arg = Literal(c) setType c.tpe
         meth.addAnnotation(appliedType(definitions.ThrowsClass, c.tpe), arg)
       }
+      */
     }
 
     /* Add a forwarder for method m. Used only from addForwarders().

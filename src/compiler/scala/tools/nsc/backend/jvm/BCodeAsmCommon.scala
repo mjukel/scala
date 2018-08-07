@@ -321,7 +321,7 @@ final class BCodeAsmCommon[G <: Global](val global: G) {
   def implementedInterfaces(classSym: Symbol): List[Symbol] = {
     // Additional interface parents based on annotations and other cues
     def newParentForAnnotation(ann: AnnotationInfo): Option[Type] = ann.symbol match {
-      case RemoteAttr => Some(RemoteInterfaceClass.tpe)
+      //case RemoteAttr => Some(RemoteInterfaceClass.tpe)
       case _          => None
     }
 

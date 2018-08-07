@@ -254,8 +254,8 @@ trait JavaUniverseForce { self: runtime.JavaUniverse  =>
     definitions.JavaCloneableClass
     definitions.JavaNumberClass
     definitions.JavaEnumClass
-    definitions.RemoteInterfaceClass
-    definitions.RemoteExceptionClass
+    //definitions.RemoteInterfaceClass
+    //definitions.RemoteExceptionClass
     definitions.JavaUtilMap
     definitions.JavaUtilHashMap
     definitions.ByNameParamClass
